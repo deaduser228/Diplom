@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-image: url(https://tehnoezh.ua/upload/medialibrary/cb1/cb14e5b6e298722abcec8e6b76ffd15c.jpg);
+    background-size: cover;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+#boot {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#boot > a{color: #fff;}
+#boot > a:hover{color: rgb(135, 131, 131);}
+ 
+  .form {
+    max-width: 350px;
+    padding: 15px;
+    margin: 100px auto;
+    background-color: #fff;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    
+    border: 1px solid #ccc;
+    
+    font-family: inherit;
+    font-size: 16px;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    
+    border: 0;
+    background-color: #1cbc11;
+    cursor: pointer;
+    
+    font-family: inherit;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #14a20a;
+  }
+
+  .suc{
+    display: none;
+    text-align: center;
+    background-color: #fff;
+  }
