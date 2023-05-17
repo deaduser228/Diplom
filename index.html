@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burmalda</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="icon" href="Images\logo\images.png">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>Burmalda</span>
+        </div>
+        <div id="about">
+            <a href="#" title="О сайте" onclick="slowScroll('#inf')">О сайте</a>
+            <a href="#" title="Книги" onclick="slowScroll('#book')">Книги</a>
+            <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+            <a href="index3.html" title="Регистрация">Регистрация</a>
+        </div>
+    </header>
+
+    <div id="top">
+        <h1>Читать</h1>
+        <h3>Это круто!</h3>
+    </div>
+
+    <div id="inf">
+        <div class="intro">
+            <h2>Информация о сайте</h2>
+            <h4>Все что ужно знать о нас!</h4>
+        </div>
+
+        <div class="text">
+            <span>Мы – ученики, студенты, магистранты, аспиранты, докторанты и преподаватели разных школ и вузов России, Беларуси, Казахстана, Узбекистана, стран ближнего и дальнего зарубежья.
+                Мы считаем, что суть образования состоит не в заучивании 30-40 учебников по перечню дисциплин. Хороший специалист - не тот, кто наизусть знает законы, даты, формулы, теоремы и методы, а тот, который знает пути решения задач и подходы к исследованию разнообразных проблем.
+                Наизусть все знать невозможно. Умение искать решение поставленных задач - вот главный навык, который должен развить вуз.
+                Мы считаем некорректной оценку знания дисциплины только по теоретическим вопросам. Решение практических задач - вот главный критерий оценки.
+                Мы считаем, что наши достижения и опыт - не писанина, которую можно забросить в нижний ящик стола и забыть навсегда. Напротив, мы ценим чужой опыт и с охотой делимся своим.
+                Мы не приходим в ужас при мысли о готовых курсовых и шпорах. В них мы видим пример решения задач, который можно взять за основу.
+                Мы не оспариваем концепцию авторства учебных материалов. Очевидно, что они нужны, чтобы ими пользовались люди. И чем больше людей ими воспользовались - тем лучше.</span>
+        </div>
+    </div>
+
+    <div id="book">
+        <h2>Книги</h2>
+        <h4>Это путь к успеху!</h4>
+
+        <div class="img">
+            <img src="https://kitaphane.tatarstan.ru/file/Image/img323_S.jpg" alt="">
+            <span>Мэнсон М. Тонкое искусство пофигизма</span>
+        </div>
+        <div class="img">
+            <img src="https://kitaphane.tatarstan.ru/file/Image/123(50).jpg" alt="">
+            <span>Кийосаки Р. Богатый папа, бедный папа</span>
+        </div>
+        <div class="img">
+            <img src="https://kitaphane.tatarstan.ru/file/Image/1(2851).jpg" alt="">
+            <span>Мессинг, Вольф. Магия моего мозга</span>
+        </div>
+        <div class="img">
+            <img src="https://kitaphane.tatarstan.ru/file/Image/1057.jpg">
+            <span>Робинсон К. Найти свое призвание</span>
+        </div>
+    </div>
+
+    <div id="contacts">
+        <h2>Наши контакты</h2>
+        <div class="cont">
+            <li>
+                <span>Адрес:</span>
+                г. Казань, ул. Зайцева, 15
+            </li>
+        </div>
+        <div class="cont">
+            <li>
+                <span>Телефон:</span>
+                +7 (932) 232 03 90
+            </li>
+        </div>
+        <div class="cont">
+            <li>
+                <span>Почта:</span>
+                info@gmail.com
+            </li>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id){
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500)
+        }
+
+        $(document).on("scroll",function() {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class","fixed"); 
+        });
+    </script>
+</body>
+</html>
